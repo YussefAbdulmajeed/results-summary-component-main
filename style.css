@@ -1,0 +1,263 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    width: 640px;
+    box-shadow: 3px 20px 35px 2px hsl(241deg 100% 89% / 23%);
+    border-radius: 20px;
+
+}
+
+main .left {
+    background-image: linear-gradient(to top, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+    padding: 30px 20px;
+    width: 50%;
+    border-radius: 20px;
+}
+
+main .left .container {
+    text-align: center;   
+}
+
+main .left .container h4 {
+    color: hsl(241, 100%, 89%);
+    margin-bottom: 27px;
+    font-size: 20px;
+}
+
+main .left .container .circle {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 27px;
+    background-image: linear-gradient(to top, hsla(241, 72%, 46%, 0) 10%, hsla(256, 72%, 46%, 1));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+main .left .container .circle h1 {
+    font-size: 3.8em;
+    color: hsl(221, 100%, 96%);
+}
+
+main .left .container .circle p {
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    font-weight: 500;
+    margin-top: -6px;
+}
+
+main .text p {
+    width: 191px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 14px;
+    color: hsla(241, 100%, 89%, 0.904);
+}
+
+.text h3 {
+    color: white;
+    font-size: 25px;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+
+main .right {
+    padding: 30px;
+    width: 50%;
+    border-radius: 0 20px 20px 0;
+}
+
+main .right h4 {
+    color: hsl(224, 30%, 27%);
+    font-weight: 800;
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+div.radius {
+    margin-bottom: 15px;
+}
+
+.radius .color {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px 15px;
+    border-radius: 10px;
+}
+
+.radius .red {
+    background-color: hsla(0, 100%, 67%, 0.1);
+}
+
+.radius .yellow {
+    background-color: hsla(39, 100%, 56%, 0.1);
+}
+
+.radius .green {
+    background-color: hsla(166, 100%, 37%, 0.1);
+}
+
+.radius .blue {
+    background-color: hsla(234, 85%, 45%, 0.1);
+}
+
+.radius .color .icon {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.radius .red .icon p {
+    color: hsl(0, 100%, 67%);
+}
+
+.radius .yellow .icon p {
+    color: hsl(39, 100%, 56%);
+}
+
+.radius .green .icon p {
+    color: hsl(166, 100%, 37%);
+}
+
+.radius .blue .icon p {
+    color: hsl(234, 85%, 45%);
+}
+
+.grad {
+    color: rgba(128, 128, 128, 0.688);
+    font-weight: 500;
+}
+
+.grad span {
+    color: hsl(224, 30%, 27%);
+    font-weight: 800;
+}
+
+.radius .color .icon img {
+    margin-right: 10px;
+}
+
+.right a {
+    margin-top: 25px;
+    text-decoration: none;
+    background: hsl(224, 30%, 27%);
+    color: white;
+    width: 265px;
+    height: 45px;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right a:hover {
+    background-image: linear-gradient(to top, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
+}
+
+@media(width:375px) {
+    body {
+        height: auto;
+    }
+
+    main {
+        flex-direction: column;
+        width: 600px;
+    }
+
+    main .left,
+    main .right {
+        width: 100%;
+    }
+
+    main .left {
+        border-radius: 0 0 25px 25px;
+        padding: 15px 30px 20px 30px;
+    }
+
+    * main .left .container h4 {
+        margin-bottom: 15px;
+    }
+
+    main .left .container .circle {
+        margin-bottom: 10px;
+        width: 130px;
+        height: 130px;
+    }
+
+    main .left .container .circle h1 {
+        font-size: 3em;
+    }
+
+    main .left .container .circle p {
+        margin-top: 0px;
+    }
+}
+
+@media(max-width:600px) {
+    body {
+        height: auto;
+    }
+
+    main {
+        flex-direction: column;
+        width: 600px;
+    }
+
+    main .left,
+    main .right {
+        width: 100%;
+    }
+
+    main .left {
+        border-radius: 0 0 25px 25px;
+        padding: 40px;
+    }
+
+    
+    main .right {
+        padding: 30px;
+        border-radius: 0px;
+    }
+
+    main .right h4 {
+        margin-bottom: 25px;
+    }
+
+    div.radius {
+        margin-bottom: 25px;
+    }
+
+    .radius .color {
+        padding: 20px 15px;
+    }
+
+    main .text p {
+        width: 225px;
+    } 
+
+    .right a {
+        width: inherit;
+        margin-top: 15px;
+    }
+}
